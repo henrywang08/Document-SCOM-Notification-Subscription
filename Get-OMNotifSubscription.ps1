@@ -26,9 +26,6 @@
 Import-Module OperationsManager
 
 
-$scom = "sgw19.sg.contoso.com"
-$credential = Get-Credential
-
 #Create initial spreadsheet 
 #get SCOM Management Group Name
 $MG = get-scommanagementgroup -Computername $scom -credential $credential
